@@ -1,0 +1,51 @@
+/* Body */
+body {
+    background-color: #f7f7f7;
+  }
+  
+  /* Modal */
+  .modal-header {
+    background-color: #4f5b62;
+    color: #fff;
+  }
+  .modal-content {
+    background-color: #fff;
+    border: none;
+  }
+  .modal-body {
+    padding: 20px;
+  }
+  .form-group label {
+    color: #4f5b62;
+    font-weight: bold;
+  }
+  .form-control {
+    border-color: #8d9aa1;
+  }
+  .btn-primary {
+    background-color: #4f5b62;
+    border-color: #4f5b62;
+  }
+  .btn-primary:hover {
+    background-color: #3e464a;
+    border-color: #3e464a;
+  }
+  .edit-button {
+    background-color: #e3f2fd;
+    border-color: #e3f2fd;
+    color: #4f5b62;
+  }
+  .edit-button:hover {
+    background-color: #c5eff7;
+    border-color: #c5eff7;
+    color: #4f5b62;
+  }
+  .delete-button {
+    background-color: #ffebee;
+    border-color: #ffebee;
+    color: #e53935;
+  }
+  .delete-button:hover {
+    background-color: #ffcdd2;
+    border-color
+  

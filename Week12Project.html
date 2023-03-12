@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Next Read</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="Styles.css">
+</head>
+<body>      
+      <div class="modal" id="addReadModal" tabindex="-1" role="dialog" aria-labelledby="addReadModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="addReadModalLabel">Add New Read</h5>
+              <button type="button" class="close" id="closeModalButton" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-group">
+                  <label for="bookTitle">Book Title</label>
+                  <input type="text" class="form-control" id="bookTitle" placeholder="Enter book title">
+                </div>
+                <div class="form-group">
+                  <label for="bookAuthor">Author</label>
+                  <input type="text" class="form-control" id="bookAuthor" placeholder="Enter author name">
+                </div>
+                <div class="form-group">
+                  <label for="dateAdded">Date Added</label>
+                  <input type="date" class="form-control" id="dateAdded">
+                </div>
+                <div class="form-group">
+                  <label for="notes">Notes</label>
+                  <textarea class="form-control" id="notes" rows="3"></textarea>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer d-flex justify-content-between">
+                <button type="button" class="btn btn-primary" id="addBookButton">Add Book</button>
+                <button type="button"
+                class="btn btn-primary edit-button"
+                id="saveChangesButton">Save Changes</button>
+              </div>              
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">Book Title</th>
+                  <th scope="col">Author</th>
+                  <th scope="col">Date Added</th>
+                  <th scope="col">Notes</th>
+                  <th scope="col">Actions</th>
+                </tr>
+              </thead>
+              <tbody id="tableBody">
+                  <td colspan="4" class="text-center"></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex justify-content-center">
+        <button type="button" class="btn btn-primary" id="addNewReadButton">Add New Read</button>
+      </div>
+      
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.3/umd/popper.min.js"></script>
+      <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax"></script>
+      <script src="Week12Project.js"></script>
+
+</body>
+</html>
